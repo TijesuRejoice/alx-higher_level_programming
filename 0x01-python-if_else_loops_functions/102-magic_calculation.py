@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # Author - TijesuRejoice
 
-def magic_calculator(a, b, c):
+def magic_calculation(a, b, c):
     """Match bytecode provided by ALX School."""
     if a < b:
         return (c)
