@@ -1,4 +1,4 @@
-#include "lists.h"
+#include <Pthon.h>
 
 /**
  * print_python_list_info - Prints basic info about Python lists.
