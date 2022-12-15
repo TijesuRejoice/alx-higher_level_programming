@@ -6,5 +6,5 @@ def print_matrix_integer(matrix=[[]]):
             print("{:d}".format(j), end="")
             if j != matrix[index][-1]:
                 print(" ", end="")
-                print("")
-                index += 1
+        print("")
+        index += 1
