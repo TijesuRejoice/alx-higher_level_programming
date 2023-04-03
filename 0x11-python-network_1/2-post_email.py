@@ -6,15 +6,15 @@
 - displays the body of the response
 """
 import sys
-import urlib.parse
-import urlib.request
+import urllib.parse
+import urllib.request
 
 
 if __name__ == "__main__":
     url = sys.argv[1]
     value = {"email": sys.argv[2]}
-    data = urlib.parse.urlencode(value).encode("ascii")
+    data = urllib.parse.urlencode(value).encode("ascii")
 
-    request = urlib.request.Request(url, data)
-    with urlib.request.urlopen(request) as response:
+    request = urllib.request.Request(url, data)
+    with urllib.request.urlopen(request) as response:
         print(response.read().decode("utf-8"))
