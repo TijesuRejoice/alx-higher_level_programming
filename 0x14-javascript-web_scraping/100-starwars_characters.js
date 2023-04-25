@@ -14,7 +14,7 @@ req.get(url + id, function (error, res, body) {
 			if (error) {
 				console.log(error);
 			}
-			conost data1 = JSON.parse(body1);
+			const data1 = JSON.parse(body1);
 			console.log(data1.name);
 		});
 	}
